@@ -6,9 +6,9 @@ services:
     plan: starter
     envVars:
       - key: APP_URL
-        value: https://docmost-94hq.onrender.com
+        value: https://docmost-94hq.onrender.com 
       - key: APP_SECRET
-        generate: true
+        generateValue: true # Corrected key: now correctly tells Render to generate a secure secret
       - key: DATABASE_URL
         fromDatabase:
           name: docmost-db
@@ -23,7 +23,7 @@ services:
       mountPath: /app/data/storage
       sizeGB: 10
 
-  # Redis Instance (using the modern keyvalue type)
+  # Redis Instance
   - type: keyvalue
     name: docmost-redis
     plan: starter
