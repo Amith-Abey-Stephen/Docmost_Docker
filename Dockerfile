@@ -1,0 +1,1 @@
+FROM docmost/docmost:latest

@@ -47,6 +47,22 @@ Docmost will be accessible at `http://localhost:3000`.
 
 ---
 
+## 🚀 Deploy to Render
+
+You can easily deploy Docmost to **Render** using the provided `render.yaml` Blueprint. This file automatically handles:
+- **Managed PostgreSQL** for content storage.
+- **Managed Redis** for caching.
+- **Persistent Disk** for storing your uploads and documentation data.
+
+### How to Deploy:
+1.  **Push your code** to a GitHub or GitLab repository.
+2.  Log in to your **[Render Dashboard](https://dashboard.render.com/)**.
+3.  Click **New +** and select **Blueprint**.
+4.  Connect your repository.
+5.  Render will auto-detect the `render.yaml` and prompt you to create the services. Wait for the initial build and deployment to complete.
+
+---
+
 ## 🏗️ Services Included
 
 | Service | Image | Description |
